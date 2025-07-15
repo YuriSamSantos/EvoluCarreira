@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial - EvoluCarreira</title>
+  <link rel="Icon" href="img/EvoluCarreira.png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a374d;
+      color: white;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .logo img {
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-color: #1A374D;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 32px 16px;
+    }
+
+    .hero button {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      padding: 12px 24px;
+      background-color: #ffc300; 
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+    }
+
+    .section-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      margin: 32px auto;
+      max-width: 1200px;
+      padding: 0 16px;
+      cursor: pointer;
+    }
+
+    .card {
+      background-color: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #0000000d;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .newsletter {
+      background: #f4f4f4;
+      padding: 32px;
+      margin: 32px auto;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .newsletter h2 {
+      margin-bottom: 8px;
+      font-size: 22px;
+    }
+
+    .newsletter p {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .newsletter input {
+      padding: 10px;
+      width: 250px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .newsletter button {
+      background: #ffc300;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #1A374D;
+      color: white;
+      text-align: center;
+      padding: 16px;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location.href='Index.html'">
+      <img src="img/EvoluCarreiraTitulo.png" alt="Logo da EvoluCarreira">
+    </div>
+    <nav>
+      <a href="Sobrenos.html">Sobre Nós</a>
+      <a href="Entrar.html">Entrar</a>
+      <a href="Criarconta.html">Criar Conta</a>
+      <a href="Cursos.html">Cursos</a>
+      <a href="Vagas.html">Vagas</a>
+      <a href="Noticias.html">Notícias</a>
+      <a href="Comunidade.html">Comunidade</a>
+      <a href="Ferramentas.html">Ferramentas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Transforme seu futuro com capacitação gratuita!</h1>
+      <button onclick="window.location.href='Cursos.html'">Acesse Cursos Gratuitos</button>
+    </section>
+
+    <section class="section-cards">
+      <div class="card" style="background-color: #1A374D; color: white;">
+        <h3 onclick="window.location.href='Cursos.html'">Acesse Cursos</h3>
+      </div>
+      <div class="card" style="background-color: #1A374D; color: white;">
+        <h3 onclick="window.location.href='Vagas.html'">Veja Vagas de Emprego</h3>
+      </div>
+      <div class="card">
+        <h3 onclick="window.location.href='Cursos.html'">Participe da Comunidade</h3>
+      </div>
+    </section>
+
+    <section class="section-cards">
+      <h2 style="width: 100%; text-align: center; margin-bottom: 16px;">Últimos Cursos Adicionados</h2>
+      <div class="card">
+        <h3 onclick="window.location.href='Cursos.html'">Introdução à Programação</h3>
+        <p>10 horas</p>
+      </div>
+      <div class="card">
+        <h3 onclick="window.location.href='Cursos.html'">Marketing Digital</h3>
+        <p>8 horas</p>
+      </div>
+      <div class="card">
+        <h3 onclick="window.location.href='Cursos.html'">Gestão de Projetos</h3>
+        <p>12 horas</p>
+      </div>
+      <div class="card">
+        <h3 onclick="window.location.href='Cursos.html'">Excel Avançado</h3>
+        <p>15 horas</p>
+      </div>
+    </section>
+
+    <section class="section-cards">
+      <h2 style="width: 100%; text-align: center; margin-bottom: 16px;">Ferramentas de Apoio à Carreira</h2>
+      <div class="card">
+        <h3 onclick="window.location.href='Ferramentas.html'">Criador de Currículos</h3>
+        <p>Monte seu currículo de forma prática</p>
+      </div>
+      <div class="card">
+        <h3 onclick="window.location.href='Ferramentas.html'">Simulador de Entrevistas</h3>
+        <p>Prepare-se para entrevistas reais</p>
+      </div>
+      <div class="card">
+        <h3 onclick="window.location.href='Ferramentas.html'">Dicas para Desenvolvimento</h3>
+        <p>Conteúdos para crescimento profissional</p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Assine Nosso Boletim Informativo</h2>
+      <p>Receba atualizações e dicas diretamente no seu e-mail!</p>
+      <input type="email" placeholder="Seu e-mail">
+      <button>Inscrever-se</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto De Extensão Interprofissional - Desenvolvimento Humano E Carreira</p>
+    <p>Centro Universitário De Excelência - UNEX </p>
+    <p>&copy; 2025 EvoluCarreira. Todos Os Direitos Reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nós - EvoluCarreira</title>
+  <link rel="icon" href="img/EvoluCarreira.png" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a374d;
+      color: white;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .logo img {
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    main {
+      flex: 1;
+      padding: 32px 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #000000;
+    }
+
+    section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .video-pitch {
+      text-align: center;
+    }
+
+    .video-pitch video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      margin-top: 16px;
+    }
+
+    .mv-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .mv-box {
+      background-color: white;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00000010;
+    }
+
+    .mv-box h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #000000;
+    }
+
+    footer {
+      background-color: #1A374D;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      line-height: 1.3;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">
+      <img src="img/EvoluCarreiraTitulo.png" alt="Logo da EvoluCarreira" />
+    </div>
+    <nav>
+      <a href="Index.html">Página Inicial</a>
+      <a href="Sobrenos.html">Sobre Nós</a>
+      <a href="Entrar.html">Entrar</a>
+      <a href="Criarconta.html">Criar Conta</a>
+      <a href="Cursos.html">Cursos</a>
+      <a href="Vagas.html">Vagas</a>
+      <a href="Noticias.html">Notícias</a>
+      <a href="Comunidade.html">Comunidade</a>
+      <a href="Ferramentas.html">Ferramentas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Quem Somos</h2>
+      <p>
+        O EvoluCarreira é um projeto voltado para o desenvolvimento profissional e humano de pessoas em busca de crescimento na carreira. Com foco em capacitação gratuita, empregabilidade e apoio à construção de trajetórias de sucesso, oferecemos ferramentas, conteúdos e uma comunidade de suporte colaborativo.
+      </p>
+    </section>
+
+    <section class="video-pitch">
+      <h2>Pitch Do Projeto</h2>
+      <video controls>
+        <source src="videos/pitch.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </section>
+
+    <section>
+      <h2>Missão, Visão e Valores</h2>
+      <div class="mv-section">
+        <div class="mv-box">
+          <h3>Missão</h3>
+          <p>Promover o desenvolvimento de competências profissionais e humanas por meio de educação acessível e ferramentas práticas para a evolução da carreira.</p>
+        </div>
+        <div class="mv-box">
+          <h3>Visão</h3>
+          <p>Ser referência em apoio educacional e profissional gratuito, impactando positivamente a vida de milhares de pessoas em suas jornadas profissionais.</p>
+        </div>
+        <div class="mv-box">
+          <h3>Valores</h3>
+          <p>Inclusão, acessibilidade, inovação, empatia, comprometimento com a transformação social e valorização do ser humano.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto De Extensão Interprofissional - Desenvolvimento Humano E Carreira</p>
+    <p>Centro Universitário De Excelência - UNEX</p>
+    <p>&copy; 2025 EvoluCarreira. Todos Os Direitos Reservados.</p>
+  </footer>
+</body>
+</html>
