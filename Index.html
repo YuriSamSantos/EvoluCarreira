@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Página Inicial - EvoluCarreira</title>
-  <link rel="Icon" href="img/EvoluCarreira.png">
+  <link rel="Icon" href="img/EvoluCarreira.png"/>
   <style>
     * {
       box-sizing: border-box;
@@ -117,15 +117,24 @@
       font-size: 16px;
     }
 
-    .newsletter input {
+    .newsletter-form {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .newsletter-form input {
       padding: 10px;
       width: 250px;
-      margin-right: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
 
-    .newsletter button {
+    .newsletter-form button {
       background: #ffc300;
       color: rgb(0, 0, 0);
       border: none;
@@ -153,6 +162,16 @@
 
       nav {
         margin-top: 16px;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+      }
+
+      .newsletter-form input,
+      .newsletter-form button {
+        width: 100%;
+        max-width: 300px;
       }
     }
   </style>
@@ -231,8 +250,10 @@
     <section class="newsletter">
       <h2>Assine Nosso Boletim Informativo</h2>
       <p>Receba atualizações e dicas diretamente no seu e-mail!</p>
-      <input type="email" placeholder="Seu e-mail">
-      <button>Inscrever-se</button>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Seu e-mail">
+        <button type="submit">Inscrever-se</button>
+      </div>
     </section>
   </main>
 
